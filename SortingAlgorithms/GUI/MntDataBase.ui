@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MntDataBase</class>
+ <widget class="QDialog" name="MntDataBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>777</width>
+    <height>423</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../rsc.qrc">
+    <normaloff>:/icones/Images/Icones/iconeDataBase.png</normaloff>:/icones/Images/Icones/iconeDataBase.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTextEdit" name="textEditQuery">
+     <property name="placeholderText">
+      <string>Consulta aqui. Ex.: SELECT * FROM Ordenation (Execute com f5)</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableView" name="tableViewRecord"/>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../rsc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

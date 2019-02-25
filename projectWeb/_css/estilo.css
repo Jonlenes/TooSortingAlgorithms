@@ -1,0 +1,218 @@
+@charset"UTF-8";
+
+@font-face {
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body {
+	font-family: Arial, sans-serif;
+	color: rgba(0, 0, 0, 1);
+}
+
+p {
+	text-align:justify;
+	text-indent:50px	
+}
+
+a {
+	color: #606060;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #0404B4;
+}
+
+header#cabecalho h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid;
+	height: 100px;
+}
+
+header#cabecalho h2 {
+	font-family: Arial, sans-serif;
+	font-size: 15pt;
+	color: #888888;
+	padding: 0px;
+	margin-top: 0px;
+	text-align: right;
+}
+
+table#tabelaDados {
+	/*border: 1px solid #606060;
+	border-spacing: 0px;
+	text-align: left;*/
+	/*vertical-align:;*/
+	margin: 10px;
+	margin-top: 50px;
+}
+
+table#tabelaDados td {
+	border: 1px solid #606060;
+	padding: 5px;
+}
+
+table#tabelaDados td.a {
+	text-align: right;
+	color: white;
+	background-color: #606060;
+	font-weight: bold;	
+}
+
+table#tabelaDados td.cellTable {
+	text-align: left;
+	background-color: #cecece;
+	font-weight: bold;
+	color: black;	
+}
+table#tabelaDados td.cellHeader {
+	text-align: center;
+	background-color: #2EFE2E;
+	color: #140718;	
+}
+table#tabelaDados caption {
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+
+section#corpo img.imageGraphic {
+	margin: 5px;
+	margin-top: 0px;
+	padding: 0px;
+	border: 1px solid #606060;
+	width: 900px;
+	/*width: 100px;*/
+}
+
+section#corpo {
+	/*border: 1px solid #DF0101;*/
+}
+
+div#interface {
+	width: 950px;
+	margin: -20px auto 0px auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);	
+	padding: 10px;
+}
+
+figure.foto-legenda {
+	position:relative;
+	border:8px solid white;
+	box-shadow:1px 1px 4px black
+}
+
+figure.foto-legenda img {
+	width:100%;
+	height:100%;	
+}
+
+figure.foto-legenda figcaption {
+	opacity:0;
+	position:absolute;
+	top:0px;
+	background-color:rgba(0, 0, 0, 0.4);	
+	color:white;
+	width:100%;
+	height:100%;
+	padding:10px;
+	box-sizing:border-box;
+	transition:opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+	opacity:1;
+}
+
+figure h3{
+	color: #888888;
+	font-size: 15pt;
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+input#btnGraphic {
+	margin-bottom: 100px;
+}
+
+button#btnGraphic {
+	color: white;
+	background-color: black;
+	box-shadow: 1px 1px 3px #000;
+	text-align: center;
+	font-size: 15px;
+	margin-bottom: 100px;	
+}
+
+
+
+/*PopUp para imagens*/
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 900px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+

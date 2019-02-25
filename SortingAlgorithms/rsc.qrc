@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/icones">
+        <file>Images/Icones/iconeDataBase.png</file>
+        <file>Images/Icones/iconeGraph.png</file>
+        <file>Images/Icones/iconeSort.png</file>
+        <file>Images/Icones/iconeSortingAlg.png</file>
+    </qresource>
+    <qresource prefix="/gifs">
+        <file>Images/gifs/bubble.gif</file>
+        <file>Images/gifs/heap.gif</file>
+        <file>Images/gifs/insertion.gif</file>
+        <file>Images/gifs/merge.gif</file>
+        <file>Images/gifs/quick.gif</file>
+        <file>Images/gifs/selection.gif</file>
+    </qresource>
+</RCC>
